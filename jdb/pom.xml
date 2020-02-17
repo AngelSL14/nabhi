@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <parent>
+        <groupId>us.gonet</groupId>
+        <artifactId>nabhi</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>db-prosa</artifactId>
+    <version>1.0</version>
+    <name>db-prosa</name>
+    <description>Demo project for Spring Boot</description>
+    <packaging>${packaging.type}</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>us.gonet</groupId>
+            <artifactId>r8583</artifactId>
+            <version>1.0</version>
+        </dependency>
+		<dependency>
+           <groupId>us.gonet</groupId>
+           <artifactId>serverutils</artifactId>
+           <version>1.0</version>
+       </dependency>
+       <dependency>
+           <groupId>us.gonet</groupId>
+           <artifactId>sectoken</artifactId>
+           <version>1.0</version>
+       </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>jdb</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>us.gonet.jxiserver.dbprosa.DbProsaApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+
+</project>

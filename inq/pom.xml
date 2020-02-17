@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>us.gonet</groupId>
+		<artifactId>nabhi</artifactId>
+		<version>1.0</version>
+	</parent>	
+	
+	<artifactId>balanceInquiry</artifactId>
+	<version>1.0</version>
+	<name>BalanceInquiry</name>
+	<description>Servicio de Consulta de Saldo</description>
+
+	<packaging>${packaging.type}</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>us.gonet</groupId>
+			<artifactId>r8583</artifactId>
+			<version>1.0</version>
+		</dependency>
+		   <dependency>
+           <groupId>us.gonet</groupId>
+           <artifactId>serverutils</artifactId>
+           <version>1.0</version>
+       </dependency>
+       <dependency>
+           <groupId>us.gonet</groupId>
+           <artifactId>sectoken</artifactId>
+           <version>1.0</version>
+       </dependency>
+	</dependencies>
+
+	<build>
+		<finalName>inq</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>us.gonet.balance.BalanceInquiryApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

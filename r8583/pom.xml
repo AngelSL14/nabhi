@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>us.gonet</groupId>
+        <artifactId>nabhi</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <!-- HUB UTILS -->
+    <artifactId>r8583</artifactId>
+    <version>1.0</version>
+
+    <name>r8583</name>
+
+    <dependencies>
+
+        <!-- SECTOKEN -->
+        <dependency>
+            <groupId>us.gonet</groupId>
+            <artifactId>sectoken</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- SERVERUTILS -->
+        <dependency>
+            <groupId>us.gonet</groupId>
+            <artifactId>serverutils</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
